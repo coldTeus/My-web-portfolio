@@ -2,6 +2,7 @@
   --bg-color: #0B0B0B;
   --color-red: #FB5757;
   --color-white: #FFFFFF;
+  --color-blue: #339DFF;
 }
 
 * {
@@ -24,7 +25,7 @@ header {
   display: inline-flex;
   width: 90%;
   margin: 0 auto;
-  padding-top: 109px;
+  padding-top: 50px;
   padding-left: 220px;
   justify-content: space-between;
   align-items: center;
@@ -38,6 +39,7 @@ nav ul li a {
   margin-right: 64px;
   font-size: 13px;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .active {
@@ -53,4 +55,53 @@ nav ul li a {
   margin-right: 22px;
   font-size: 13px;
   text-decoration: none;
+}
+
+/******* Introduction **********/
+
+#introduction {
+  margin: 0 auto;
+  padding-top: 243px;
+  padding-left: 221px;
+}
+
+#introduction h1 {
+  font-weight: bold;
+  color: var(--color-white);
+  font-size: 90px;
+}
+#introduction p {
+  color: var(--color-white);
+  font-size: 23px;
+}
+.text-red {
+  color: var(--color-red);
+}
+.buttons {
+  padding-top: 35px;
+}
+.button-about {
+  border-radius: 12px;
+  border: 1px solid var(--color-red);
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--color-white);
+  background-color: transparent;
+  width: 342px;
+  height: 65px;
+  text-transform: uppercase;
+  margin-right: 24px;
+  cursor: pointer;
+}
+.button-cv {
+  border-radius: 12px;
+  border: 1px solid var(--color-blue);
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--color-white);
+  background-color: transparent;
+  width: 342px;
+  height: 65px;
+  text-transform: uppercase;
+  cursor: pointer;
 }
