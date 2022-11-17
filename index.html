@@ -11,36 +11,55 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./assets/styles/index.css" />
-    <title>Julius Matheus</title>
+    <script src="./assets/scripts/scroll.js" defer></script>
+    <title>Julius Matheus | Designer e Desenvolvedor Front-end</title>
   </head>
   <body>
-    <header>
-      <nav>
-        <ul>
-          <li>
-            <a href="" class="active">Trabalhos</a>
-            <a href="">Sobre</a>
-            <a href="https://www.behance.net/juliusmatheusdesign" target="_blank">Behance</a>
-            <a href="https://github.com/coldTeus" target="_blank">Github</a>
-            <a href="">Blog</a>
-          </li>
-        </ul>
-      </nav>
-      <div id="linguagem">
-        <ul>
-          <li>
-            <a href="">EN</a>
-            <a href="">PT-BR</a>
-          </li>
-        </ul>
+    <div id="container">
+      <header>
+        <nav>
+          <ul>
+            <li>
+              <a href="" class="active">Trabalhos</a>
+              <a href="">Sobre</a>
+              <a
+                href="https://www.behance.net/juliusmatheusdesign"
+                target="_blank"
+                >Behance</a
+              >
+              <a href="https://github.com/coldTeus" target="_blank">Github</a>
+              <a href="">Blog</a>
+            </li>
+          </ul>
+        </nav>
+        <div id="linguagem">
+          <ul>
+            <li>
+              <a href="">EN</a>
+              <a href="">PT-BR</a>
+            </li>
+          </ul>
+        </div>
+      </header>
+
+      <div id="introduction">
+        <h1><a class="text-red">olá,</a> eu sou julius.</h1>
+        <p>designer e desenvolvedor front-end.</p>
+        <div class="buttons">
+          <a href=""><button class="button-about">Sobre mim</button></a>
+          <a href=""><button class="button-cv">Baixar CV</button></a>
+        </div>
       </div>
-    </header>
-    <div id="introduction">
-      <h1><a class="text-red">Olá,</a> eu sou Julius.</h1>
-      <p>Designer e Desenvolvedor Front-end.</p>
-      <div class="buttons">
-        <a href=""><button class="button-about" >Sobre mim</button></a>
-        <a href=""><button class="button-cv">Baixar CV</button></a>
+      <div class="scrolldown-wrapper">
+        <a href="#second"
+          >Rolar<br />para baixo
+          <div class="scrolldown">
+            <svg height="30" width="10">
+              <circle class="scrolldown-p1" cx="5" cy="15" r="2" />
+              <circle class="scrolldown-p2" cx="5" cy="15" r="2" />
+            </svg>
+          </div>
+        </a>
       </div>
     </div>
   </body>
