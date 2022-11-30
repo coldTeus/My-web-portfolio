@@ -1,14 +1,15 @@
 :root {
-  --bg-color: #0B0B0B;
+  --bg-color: #0b0b0b;
   --bg-footer: #0e0e0e;
-  --color-red: #FB5757;
-  --color-white: #FFFFFF;
-  --color-blue: #339DFF;
+  --color-red: #fb5757;
+  --color-white: #ffffff;
+  --color-blue: #339dff;
   --color-gray: #666666;
 
   /** font **/
 
   --font-roboto: 'Roboto', sans-serif;
+  --font-syne: 'Syne', sans-serif;
 }
 
 * {
@@ -55,7 +56,7 @@ nav ul li a {
   font-size: 13px;
   text-decoration: none;
   cursor: pointer;
-  transition: all .2s linear;
+  transition: all 0.2s linear;
 }
 
 nav ul li a:hover {
@@ -63,7 +64,7 @@ nav ul li a:hover {
 }
 
 .active {
-  color: var(--color-red);
+  color: var(--color-red)!important;
 }
 
 #linguagem ul li a {
@@ -73,7 +74,7 @@ nav ul li a:hover {
   margin-right: 22px;
   font-size: 13px;
   text-decoration: none;
-  transition: all .2s linear;
+  transition: all 0.2s linear;
 }
 
 #linguagem ul li a:hover {
@@ -113,7 +114,7 @@ nav ul li a:hover {
   text-transform: lowercase;
   margin-right: 24px;
   cursor: pointer;
-  transition: all .2s linear;
+  transition: all 0.2s linear;
 }
 .button-cv {
   border-radius: 12px;
@@ -127,7 +128,7 @@ nav ul li a:hover {
   text-transform: lowercase;
   margin-right: 24px;
   cursor: pointer;
-  transition: all .2s linear;
+  transition: all 0.2s linear;
 }
 
 .button-about:hover {
@@ -136,60 +137,6 @@ nav ul li a:hover {
 .button-cv:hover {
   background-color: var(--color-blue);
 }
-
-/****** Scroll Down *********/
-
-.scrolldown-wrapper {
-	left: 50%;
-	position: absolute;
-	text-align: center;
-	bottom: 0;
-	transform: translate(-50%, -50%);
-}
-.scrolldown-wrapper a {
-  text-decoration: none;
-  color: var(--color-white);
-  font-weight: 500;
-  text-transform: uppercase;
-  font-size: 0.7rem;
-}
-  
-.scrolldown {
-  border: 2px solid var(--color-white);
-  border-radius: 30px;
-  height: 46px;
-  margin: 0 auto 31px;
-  text-align: center;
-  width: 30px;
-}
-
-.scrolldown-p1,
-.scrolldown-p2 {
-	animation-duration: 1.5s;
-	animation-name: scrolldown;
-	animation-iteration-count: infinite;
-	fill: var(--color-white);
-}
-  
-.scrolldown-p2 {
-	animation-delay: .75s;
-}
-
-@keyframes scrolldown {
-	0% {
-		opacity: 0;
-		transform: translate(0, -8px);
-	}
-	50% {
-		opacity: 1;
-		transform: translate(0, 0);
-	}
-	100% {
-		opacity: 0;
-		transform: translate(0, 8px);
-	}
-}
-
 
 /******* Portfolio **********/
 
@@ -221,7 +168,8 @@ nav ul li a:hover {
 }
 
 .thumb:hover {
-  box-shadow: 0rem 0rem 0.7222222222222222rem 0.3333333333333333rem rgb(2 0 0 / 0%);
+  box-shadow: 0rem 0rem 0.7222222222222222rem 0.3333333333333333rem
+    rgb(2 0 0 / 0%);
 }
 
 .thumb {
@@ -250,15 +198,15 @@ nav ul li a:hover {
   opacity: 0;
   top: 0;
   z-index: 10;
-  transition: all .3s ease;
-  -moz-transition: all .3s ease;
-  -webkit-transition: all .3s ease;
-  -o-transition: all .3s ease;
+  transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
   display: flex;
 }
 
 .thumb:hover img {
-  transform: scale(1.0);
+  transform: scale(1);
 }
 
 .thumb img {
@@ -281,13 +229,13 @@ nav ul li a:hover {
 }
 
 .title-trabalhos {
-    color: var(--color-white);
-    font-size: 2.3333333333333335rem;
-    text-transform: none;
-    line-height: 1.5;
-    font-family: var(--font-roboto);
-    font-weight: 700;
-    font-style: normal;
+  color: var(--color-white);
+  font-size: 2.3333333333333335rem;
+  text-transform: none;
+  line-height: 1.5;
+  font-family: var(--font-roboto);
+  font-weight: 700;
+  font-style: normal;
 }
 
 .category {
@@ -299,7 +247,6 @@ nav ul li a:hover {
   font-weight: 400;
   font-style: normal;
 }
-
 
 /***************** Footer **********/
 
@@ -313,7 +260,7 @@ footer {
   position: relative;
   width: 100%;
   border: none;
-  margin-top: 10%;
+  margin-top: 0%;
 }
 
 #main-footer p {
@@ -331,9 +278,80 @@ footer {
   text-decoration: none;
   font-weight: 700;
   padding-left: 13px;
-  transition: all .2s linear;
+  transition: all 0.2s linear;
 }
 
 #main-footer a:hover {
   color: var(--color-red);
+}
+
+/****************** Sobre ***************/
+
+#sobre {
+  max-width: 890px;
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 1.66667rem;
+  height: auto;
+  padding-top: 6%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.introduction-sobre p {
+  color: var(--color-white);
+  font-family: var(--font-roboto);
+  font-weight: 700;
+  font-style: normal;
+}
+
+#avatar-pessoal {
+  height: auto;
+}
+
+.img-pessoal {
+  border-radius: 15px;
+}
+
+#desc-pessoal {
+  padding-top: 3.0555555555555554rem;
+  padding-bottom: 1.055556rem;
+  background-color: var(--bg-footer);
+  display: flex;
+  flex-direction: column;
+  border-style: solid;
+  position: relative;
+  width: 100%;
+  border: none;
+  margin-top: 3%;
+}
+
+#content-desc {
+  max-width: 890px;
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 1.66667rem;
+  height: auto;
+  justify-content: space-between;
+  align-items: center;
+  word-break: break-word;
+}
+
+#content-desc p {
+  color: var(--color-gray);
+  font-family: var(--font-roboto);
+  font-size: 1.11111rem;
+  line-height: 1.83333rem;
+  font-weight: 500;
+}
+
+#transition {
+  opacity: 0;
+}
+
+.page-loaded #transition {
+  opacity: 1;
+  transition: opacity 2.3s ease;
 }
