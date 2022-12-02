@@ -257,10 +257,25 @@ footer {
   display: flex;
   flex-direction: column;
   border-style: solid;
-  position: relative;
   width: 100%;
   border: none;
   margin-top: 0%;
+  position: relative;
+  bottom: 0;
+}
+
+footer.footer-2 {
+  padding-top: 3.0555555555555554rem;
+  padding-bottom: 1.055556rem;
+  background-color: var(--bg-footer);
+  display: flex;
+  flex-direction: column;
+  border-style: solid;
+  width: 100%;
+  border: none;
+  margin-top: 0%;
+  position: fixed;
+  bottom: 0;
 }
 
 #main-footer p {
@@ -354,4 +369,25 @@ footer {
 .page-loaded #transition {
   opacity: 1;
   transition: opacity 2.3s ease;
+}
+
+/*********** Blog **********/
+
+#blog {
+  max-width: 890px;
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 1.66667rem;
+  height: auto;
+  padding-top: 6%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.introduction-blog p {
+  color: var(--color-white);
+  font-family: var(--font-roboto);
+  font-weight: 700;
+  font-style: normal;
 }
