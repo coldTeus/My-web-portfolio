@@ -64,7 +64,7 @@ nav ul li a:hover {
 }
 
 .active {
-  color: var(--color-red)!important;
+  color: var(--color-red) !important;
 }
 
 #linguagem ul li a {
@@ -390,4 +390,151 @@ footer.footer-2 {
   font-family: var(--font-roboto);
   font-weight: 700;
   font-style: normal;
+}
+
+/**************** Media Mobile *************/
+
+@media only screen and (max-width: 600px) {
+  #content-trabalhos {
+    display: flex;
+    align-content: center;
+    height: 100%;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  #main-trabalhos {
+    margin: 0px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-bottom: 24px;
+    width: 100%;
+    max-width: 100%;
+    flex: 0 0 auto;
+    flex-basis: 50%;
+  }
+  #trabalhos {
+    max-width: 1100px;
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0px 0.66667rem;
+    flex-direction: row;
+    height: auto;
+    padding-top: 10%;
+  }
+  .button-about {
+    border-radius: 12px;
+    border: 1px solid var(--color-red);
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--color-white);
+    background-color: transparent;
+    width: 272px;
+    height: 65px;
+    text-transform: lowercase;
+    margin-right: 24px;
+    cursor: pointer;
+    transition: all 0.2s linear;
+  }
+  .button-cv {
+    border-radius: 12px;
+    border: 1px solid var(--color-blue);
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--color-white);
+    background-color: transparent;
+    width: 272px;
+    height: 65px;
+    text-transform: lowercase;
+    margin-right: 24px;
+    cursor: pointer;
+    transition: all 0.2s linear;
+    margin-top: 8px;
+  }
+  #introduction p {
+    color: var(--color-white);
+    font-size: 0.9rem;
+  }
+  #introduction {
+    padding-top: 44px;
+    margin: 0 auto;
+    display: inline-flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+  }
+  #container {
+    max-width: 1100px;
+    display: flex;
+    flex-wrap: nowrap;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0 0.6rem;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+  }
+  .buttons {
+    padding-top: 35px;
+    margin-left: 24px;
+  }
+  #main-footer {
+    text-align: center;
+    display: inline-flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+  }
+  #main-footer p {
+    color: var(--color-gray);
+    font-family: var(--font-roboto);
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.888889rem;
+    line-height: 1.333333rem;
+    text-align: center;
+    margin-bottom: 0.66667rem;
+    padding: 2px;
+    width: auto;
+}
+  #introduction h1 {
+    font-weight: bold;
+    color: var(--color-white);
+    font-size: 2.22222rem;
+  }
+  header {
+    display: inline-flex;
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 50px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+}
+li {
+  list-style: none;
+  display: inline-flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  align-items: center;
+}
+nav ul li a {
+  color: var(--color-white);
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-right: 0px;
+  margin-top: 10px;
+  font-size: 13px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
 }
